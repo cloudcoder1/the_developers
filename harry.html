@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="harry.css">
+    <title>Login - Food App</title>
+</head>
+<body>
+
+<header>
+    <h1><marguee>AITAM-COLLEGE CANTEEN FOOD MENU</marguee></h1>
+</header>
+
+<div class="login-container">
+    <h2>Login to Your Account</h2>
+    <form id="loginForm" onsubmit="return handleLogin(event)">
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#">Sign up</a></p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Food App. All rights reserved.</p>
+</footer>
+
+<script>
+    function handleLogin(event) {
+        event.preventDefault(); // Prevent form submission
+        // Redirect to the food selection page
+        window.location.href = "food.html";
+    }
+</script>
+
+</body>
+</html>
